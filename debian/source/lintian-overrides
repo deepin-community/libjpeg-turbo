@@ -1,0 +1,28 @@
+# manually checked the all_6.js Javascript file, it is not minified/pre-built
+libjpeg-turbo source: source-is-missing doc/html/search/all_6.js
+libjpeg-turbo source: source-contains-prebuilt-javascript-object doc/html/search/all_6.js
+
+# manually checked the menu.js Javascript file, it is not minified/pre-built
+libjpeg-turbo source: source-is-missing doc/html/menu.js
+libjpeg-turbo source: source-contains-prebuilt-javascript-object doc/html/menu.js
+
+# we don't use this file in the bin:pkg (FIXME, this file should not be in the src:pkg, at all!)
+libjpeg-turbo source: source-contains-prebuilt-javascript-object doc/html/jquery.js
+
+# yes, we know. This needs to be fixed after the Debian 11 release freeze
+libjpeg-turbo source: source-contains-prebuilt-doxygen-documentation *
+
+# we temporarily switch to Github tag tarballs as the former download URL was offline when preparing 2.1.1-1
+libjpeg-turbo source: orig-tarball-missing-upstream-signature libjpeg-turbo_*.orig.tar.gz
+libjpeg-turbo source: debian-watch-could-verify-download debian/upstream/signing-key.asc
+
+# too long lines in file we ignore for now
+libjpeg-turbo source: very-long-line-length-in-source-file doc/html/group___turbo_j_p_e_g.html line 1661 is 1677 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file doc/html/jquery.js line 2 is 88059 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file doc/html/menu.js line 46 is 701 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file doc/html/structtjtransform.html line 92 is 536 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file doc/html/tabs.css line 1 is 9184 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file java/doc/org/libjpegturbo/turbojpeg/TJCompressor.html line 411 is 1607 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file java/doc/org/libjpegturbo/turbojpeg/TJTransformer.html line 209 is 2801 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file release/License.rtf line 19 is 766 characters long (>512)
+libjpeg-turbo source: very-long-line-length-in-source-file release/ReadMe.txt line 1 is 589 characters long (>512)
