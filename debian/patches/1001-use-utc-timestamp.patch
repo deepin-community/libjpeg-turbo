@@ -8,9 +8,9 @@ Specify timezone in UTC to enable a reproducible build.
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -34,7 +34,7 @@
- # application bundles would break our iOS packages.)
- set(CMAKE_MACOSX_BUNDLE FALSE)
+@@ -49,7 +49,7 @@
+   set(GENERATOR_IS_MULTI_CONFIG TRUE)
+ endif()
  
 -string(TIMESTAMP DEFAULT_BUILD "%Y%m%d")
 +string(TIMESTAMP DEFAULT_BUILD "%Y%m%d" UTC)
