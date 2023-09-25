@@ -1,3 +1,47 @@
+libjpeg-turbo (1:2.1.5-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_initialize-simd-support-before-every-use.patch. (Closes:
+      #1030347).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Feb 2023 15:28:42 +0100
+
+libjpeg-turbo (1:2.1.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Rebase patches.
+  * debian/copyright:
+    + Update auto-generated copyright.in file.
+    + Cleanup copyright.in manually. Too much binary noise.
+    + Update copyright attributions.
+    + Update copyright attributions for debian/.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * lintian: Adjust lintian override tags to new syntax, adjust upstream
+    version 2.1.5.
+  * debian/watch:
+    + Ignore RC releases (x.y.9z pattern).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Feb 2023 11:45:21 +0100
+
+libjpeg-turbo (1:2.1.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/rules:
+    + Add get-orig-source target (for maintainers' convenience).
+  * debian/control:
+    + Add B-D: help2man.
+  * debian/copyright:
+    + Update auto-generated copyright.in file.
+    + Update copyright attributions.
+
+  [ Mathieu Malaterre ]
+  * debian/rules:
+    + Prefer auto generated tjbench manpage. (Closes: #1000462).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 26 Nov 2021 14:41:55 +0100
+
 libjpeg-turbo (1:2.1.1-2) unstable; urgency=medium
 
   [ Daniel Leidert ]
