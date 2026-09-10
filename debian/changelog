@@ -1,3 +1,9 @@
+libjpeg-turbo (1:2.1.5-3) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Thu, 10 Sep 2026 18:28:38 +0800
+
 libjpeg-turbo (1:2.1.5-2) unstable; urgency=medium
 
   * debian/patches:
