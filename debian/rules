@@ -11,7 +11,7 @@ include /usr/share/dpkg/default.mk
 ifneq (,$(filter $(DEB_HOST_ARCH), m68k))
   FLOAT_STORE=-ffloat-store
 endif
-ifneq (,$(filter $(DEB_HOST_ARCH), ia64 riscv64 s390x))
+ifneq (,$(filter $(DEB_HOST_ARCH), ia64 riscv64 s390x loong64))
   FLOATTEST=-DFLOATTEST=fp-contract
 endif
 
