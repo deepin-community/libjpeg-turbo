@@ -1,4 +1,4 @@
-libjpeg-turbo (1:2.1.5-3) unstable; urgency=medium
+libjpeg-turbo (1:2.1.5-2deepin1) unstable; urgency=medium
 
   * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
   * d/rules: select FLOATTEST=fp-contract on loong64 like on
